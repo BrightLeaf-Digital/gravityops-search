@@ -24,7 +24,7 @@ class GravityOps_Search extends GFAddOn {
      *
      * @var string Version of the plugin.
      */
-    protected $_version = '1.0.0';
+    protected $_version = '1.0.1';
 
     /**
      * A string representing the slug used for the plugin.
