@@ -31,7 +31,8 @@ add_action(
         if ( ! method_exists( 'GFForms', 'include_addon_framework' ) ) {
             return;
         }
-        GFForms::include_addon_framework();
+	    require_once __DIR__ . '/vendor-prefixed/autoload.php';
+	    GFForms::include_addon_framework();
         require_once 'includes/class-gravityops-search.php';
         GFAddOn::register( 'GravityOps_Search' );
     },
