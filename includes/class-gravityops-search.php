@@ -138,12 +138,8 @@ class GravityOps_Search extends GFAddOn {
 	 * Creates a submenu for the plugin in the WordPress admin dashboard.
 	 */
 	public function create_sub_menu() {
-        SettingsHeader::render(
-                $this->_title,
-                'GravityOps Search is your infinitely customizable VLOOKUP for Gravity Forms!',
-                $this->_slug,
-                'https://brightleafdigital.io/gravityops-search/'
-        );
+		echo '<h1 style="padding-left: 15px;">GravityOps Search is your infinitely customizable VLOOKUP for Gravity Forms!</h1>
+		<p style="padding-left: 15px; font-size: large">For more information and plugin documentation, visit our <a href="https://brightleafdigital.io/gravityops-search/" target="_blank">plugin page</a>.</p>';
     }
 
 	/**
