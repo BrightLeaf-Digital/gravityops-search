@@ -36,7 +36,6 @@ add_action(
         }
 
 	    SuiteCore::register(
-            GRAVITYOPS_SEARCH_BASENAME,
             [
                 'assets_base_url' => $assets_base_url,
             ]
