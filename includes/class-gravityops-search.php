@@ -77,6 +77,18 @@ class GravityOps_Search extends GFAddOn {
     }
 
 	/**
+	 * Deletes all plugin created data during uninstall.
+	 *
+	 * @return void
+	 */
+	public function uninstall() {
+		parent::uninstall();
+		delete_option( "{$this->prefix}search_count" );
+		delete_option( "{$this->prefix}review_prompter_usage_count" );
+		delete_option( "{$this->prefix}survey_status" );
+	}
+
+	/**
 	 * Initializes the admin functionalities for the application.
 	 *
 	 * Sets up the necessary hooks and actions to configure the admin area, including adding the top-level menu.
