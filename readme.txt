@@ -4,7 +4,7 @@ Tags: gravity forms, display form entries, frontend entry search, shortcode resu
 Requires at least: 6.5
 Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 1.0.6
+Stable tag: 1.0.6.1
 License: GPLv2
 License URI: https://brightleafdigital.io/gravityops-search/
 
@@ -175,6 +175,9 @@ No. The entire search, filtering, and output process is achieved through shortco
 
 == Changelog ==
 
+= 1.0.6.1 | Feb 19, 2026 =
+- Fixed a bug showing update versions for uninstalled plugins.
+
 = 1.0.6 | Feb 18, 2026 =
 - Fixed uninstall process to properly clear everything
 - Updated core GravityOps library to improve the update plugin process among other small fixes
@@ -190,8 +193,6 @@ No. The entire search, filtering, and output process is achieved through shortco
 = 1.0.3 | Dec 18, 2025 =
 * Fixed a bug with new admin menu
 
-= 1.0.2 | Dec 16, 2025 =
-* Updated plugin menu and icon.
 
 == Upgrade Notice ==
 Upgrade now to get the full plugin version of the original search snippet, with improved stability, easier shortcode usage, and ongoing updates for better front-end entry searching and display.
