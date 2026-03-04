@@ -286,7 +286,7 @@ class GravityOps_Search extends GFAddOn {
                 /*
                  * Validate operator against supported operators
                  * is, = (exact match)
-                 * isnot, isnot, != (not equal) (<> not supported due to sanitizing issues)
+                 * isnot, != (not equal) (<> not supported due to sanitizing issues)
                  * contains (Substring search-converted to LIKE %value%)
                  * like: SQL like with wildcards
                  * notin, not in (values not in array)
@@ -519,6 +519,7 @@ class GravityOps_Search extends GFAddOn {
                     continue;
                 }
                 if ( 'num_results' === $display_id ) {
+                    $entry_results[ $display_id ] = '{num_results}';
                     continue;
                 }
 
@@ -650,7 +651,9 @@ class GravityOps_Search extends GFAddOn {
 
         $final_results = array_map(
             function ( $result ) use ( $final_results ) {
-                return str_replace( '{gos:num_results}', count( $final_results ), $result );
+                $count  = count( $final_results );
+                $result = str_replace( '{gos:num_results}', $count, $result );
+                return str_replace( '{num_results}', $count, $result );
             },
             $final_results
         );

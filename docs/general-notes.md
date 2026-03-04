@@ -1,5 +1,14 @@
 # General Notes
 
+### GravityOps Search Admin Page
+
+You can find a high-level overview of the GravityOps Search plugin by navigating to:
+- **GravityOps → Search**
+
+The **Overview** tab provides a summary of the plugin's capabilities, while the **Help** tab offers quick links to documentation, support, and community resources.
+
+### Shortcode Tips and Guidelines
+
 - To search multiple fields pass comma separated IDs to the search
   attribute and separate the corresponding values in  
   the shortcode content with the `|` symbol. Use

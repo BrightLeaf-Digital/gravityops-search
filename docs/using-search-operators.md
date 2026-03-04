@@ -86,7 +86,7 @@ the `search` attribute:
 Basic match with mixed operators
 
 ``` wp-block-code
-[gravops_search="3,5,8" operators="contains,=,gt"]
+[gravops_search target="1" search="3,5,8" operators="contains,=,gt"]
 Smith|john@example.com|50
 [/gravops_search]
 ```

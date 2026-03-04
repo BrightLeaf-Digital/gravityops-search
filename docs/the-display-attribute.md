@@ -85,7 +85,7 @@ display="<a href="{13}">"                 ❌
   Useful when using limit="all" or for showing counts like:
   "{num_results} entries found."
 - To see which keys are available for use in the display or search
-  attributes: `[[gravops_search display="meta"]]`This will return a list
+  attributes: `[gravops_search target="1" display="meta"]` (where target="1" is your form ID). This will return a list
   of all meta keys for the matched entry. You can customize the layout
   with the `separator` attribute.
 - **Tip***: You can also find meta-keys by hovering or clicking on

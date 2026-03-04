@@ -36,7 +36,8 @@ This plugin is built explicitly for front-end entry search and display. It does 
 * Use the `separator` attribute to control how multiple entry results are separated (including HTML separators or no separator at all using `__none__`).
 * Sort entries using `sort_key`, `sort_direction`, and `sort_is_num`, with optional `secondary_sort_key` and `secondary_sort_direction` for tie-breaking.
 * Limit the number of results returned with `limit`, including support for `limit=\"all\"` when you need to show every matching entry.
-* Turn on `unique` to return only unique result values, great for building deduplicated lists such as unique email addresses, user IDs, or other fields.
+* Display unique results only using the `unique` attribute.
+* Admin Dashboard: Quickly access plugin overview, documentation, and help from the GravityOps admin menu.
 * Search for empty or blank values with the `search_empty` attribute and an empty shortcode content, to find incomplete or missing data.
 * Provide fallback values when no entries match—or when individual fields are empty—using the `default` attribute.
 * Add an admin link to each result with the `link` attribute so power users can jump directly from the front end to the entry in the Gravity Forms admin.
@@ -182,7 +183,7 @@ No. The entire search, filtering, and output process is achieved through shortco
 - Fixed uninstall process to properly clear everything
 - Updated core GravityOps library to improve the update plugin process among other small fixes
 
-= 1.0.5 | Dec 21, 2026 =
+= 1.0.5 | Dec 21, 2025 =
 * Bumped version of core GravityOps library to fix some bugs regarding the plugin admin menus and integrate [TrustedLogin](https://www.trustedlogin.com/about/easy-and-safe/)
 * Enhanced Update Notifications: Improved how plugin update information and changelogs are delivered to your WordPress dashboard.
 * General Maintenance: Performed routine cleanup, including removing obsolete image assets and optimizing internal configurations for better performance.
