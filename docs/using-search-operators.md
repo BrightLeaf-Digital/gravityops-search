@@ -1,10 +1,6 @@
 # Using Search Operators
 
-The `operators` attribute[ ](https://brightleafdigital.io/code/entry/44-gfsearch-shortcode/)allows
-you to define **how each search value is compared** to its corresponding
-field in the `search` attribute. It should be a **comma-separated
-list**, with each operator matching its position to the same-positioned
-field ID in the `search` attribute.  
+The `operators` [attribute](https://brightleafdigital.io/code/entry/44-gfsearch-shortcode/) allows you to define **how each search value is compared** to its corresponding field in the `search` attribute. It should be a **comma-separated list**, with each operator matching its position to the same-positioned field ID in the `search` attribute.
 
 ## Supported Operators
 
@@ -61,8 +57,7 @@ field ID in the `search` attribute.
 </table>
 </figure>
 
-> *To compare against multiple values using *`in`* or *`not in`*, pass a
-> PHP-style array in the shortcode content, like:*
+> *To compare against multiple values using *`in`* or *`not in`*, pass a PHP-style array in the shortcode content, like:
 >
 > ``` wp-block-code
 > array('item one', 'item two', 'item three')
@@ -75,9 +70,11 @@ Each operator in `operators` must match the position of a field in the `search` 
 - If you pass **fewer operators** than `search` fields:
   - The **remaining fields default to** `=` (exact match).
   - This lets you apply advanced filters only where needed.
--  If you pass **more operators** than `search` fields:
+
+- If you pass **more operators** than `search` fields:
   - **Extra operators are ignored.**
--  If `operators` is omitted entirely:
+
+- If `operators` is omitted entirely:
   - **All search fields use `=` by default.**
 
 ## Examples
@@ -117,9 +114,6 @@ Smith|john@example.com|50
 
 ## Tips & Gotchas
 
-- **Array format:** Use `array('one','two')` exactly—do not just write
-  comma-separated values.
-- **Order matters:** Ensure your `operators` match the order
-  of `search` fields.
-- If a field is repeated in `search`, you can still assign distinct
-  operators per instance.
+- **Array format:** Use `array('one','two')` exactly—do not just write comma-separated values.
+- **Order matters:** Ensure your `operators` match the order of `search` fields.
+- If a field is repeated in `search`, you can still assign distinct operators per instance.

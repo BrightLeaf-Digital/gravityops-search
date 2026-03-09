@@ -1,17 +1,18 @@
 # Multi-Input Field Support
 
 Multi-input fields—such as **Name**, **Address**,
-and **Checkbox** fields—contain multiple inputs within a single field.  
+and **Checkbox** fields—contain multiple inputs within a single field.
 GravityOps Search supports both displaying and searching these fields,
 but the behavior differs slightly between display and search.
 
-## Displaying Multi-Input Fields 
+## Displaying Multi-Input Fields
 
 When using the display attribute with the base field ID (e.g., {13}),
 the plugin automatically detects if the field is multi-input and will:
 
-Fetch all of its sub-inputs (e.g., First Name, Last Name)  
-Concatenate them into a single string separated by spaces  
+- Fetch all of its sub-inputs (e.g., First Name, Last Name)
+- Concatenate them into a single string separated by spaces
+
 This allows for simple display of complete names or addresses without
 needing to reference each sub-input.
 
