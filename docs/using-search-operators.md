@@ -1,10 +1,10 @@
 # Using Search Operators
 
-The `operators` attribute[ ](https://brightleafdigital.io/code/entry/44-gfsearch-shortcode/)allows
-you to define **how each search value is compared** to its corresponding
-field in the `search` attribute. It should be a **comma-separated
+The `operators` attribute[ ](https://brightleafdigital.io/code/entry/44-gfsearch-shortcode/)allows
+you to define **how each search value is compared** to its corresponding
+field in the `search` attribute. It should be a **comma-separated
 list**, with each operator matching its position to the same-positioned
-field ID in the `search` attribute.  
+field ID in the `search` attribute.  
 
 ## Supported Operators
 
@@ -18,11 +18,11 @@ field ID in the `search` attribute.
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>=</code> or <code>is</code></td>
+<td><code>=</code> or <code>is</code></td>
 <td>Equals</td>
 </tr>
 <tr class="even">
-<td><code>!=</code>, <code>isnot</code>, <code>is not</code></td>
+<td><code>!=</code>, <code>isnot</code>, <code>is not</code></td>
 <td>Not equal to</td>
 </tr>
 <tr class="odd">
@@ -31,14 +31,14 @@ field ID in the `search` attribute.
 </tr>
 <tr class="even">
 <td><code>like</code></td>
-<td>SQL-style <code>LIKE</code> with custom wildcards</td>
+<td>SQL-style <code>LIKE</code> with custom wildcards</td>
 </tr>
 <tr class="odd">
 <td><code>in</code></td>
 <td>Value is in array</td>
 </tr>
 <tr class="even">
-<td><code>notin</code>, <code>not in</code></td>
+<td><code>notin</code>, <code>not in</code></td>
 <td>Value is NOT in array</td>
 </tr>
 <tr class="odd">
@@ -61,7 +61,7 @@ field ID in the `search` attribute.
 </table>
 </figure>
 
-> *To compare against multiple values using *`in`* or *`not in`*, pass a
+> *To compare against multiple values using *`in`* or *`not in`*, pass a
 > PHP-style array in the shortcode content, like:*
 >
 > ``` wp-block-code
@@ -70,16 +70,15 @@ field ID in the `search` attribute.
 
 ## Operator Matching Behavior
 
-Each operator in `operators` must match the position of a field in
-the `search` attribute:
+Each operator in `operators` must match the position of a field in the `search` attribute:
 
--  If you pass **fewer operators** than `search` fields:
-  - The **remaining fields default to** `=` (exact match).
+- If you pass **fewer operators** than `search` fields:
+  - The **remaining fields default to** `=` (exact match).
   - This lets you apply advanced filters only where needed.
--  If you pass **more operators** than `search` fields:
+-  If you pass **more operators** than `search` fields:
   - **Extra operators are ignored.**
--  If `operators` is omitted entirely:
-  - **All search fields use `=` by default.**
+-  If `operators` is omitted entirely:
+  - **All search fields use `=` by default.**
 
 ## Examples
 
@@ -91,11 +90,11 @@ Smith|john@example.com|50
 [/gravops_search]
 ```
 
-- Field 3 must *contain* "Smith"
-- Field 5 must *equal* "<john@example.com>"
-- Field 8 must be *greater than* 50
+- Field 3 must *contain* "Smith"
+- Field 5 must *equal* "<john@example.com>"
+- Field 8 must be *greater than* 50
 
-Using array for `in`
+Using array for `in`
 
 ``` wp-block-code
 [gravops_search search="5" operators="in"]
@@ -113,14 +112,14 @@ Smith|john@example.com|50
 [/gravops_search]
 ```
 
-- Field 3 uses `contains`
-- Field 5 and 8 default to `=`
+- Field 3 uses `contains`
+- Field 5 and 8 default to `=`
 
 ## Tips & Gotchas
 
-- **Array format:** Use `array('one','two')` exactly—do not just write
+- **Array format:** Use `array('one','two')` exactly—do not just write
   comma-separated values.
-- **Order matters:** Ensure your `operators` match the order
-  of `search` fields.
-- If a field is repeated in `search`, you can still assign distinct
+- **Order matters:** Ensure your `operators` match the order
+  of `search` fields.
+- If a field is repeated in `search`, you can still assign distinct
   operators per instance.
