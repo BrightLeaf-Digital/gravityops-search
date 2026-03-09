@@ -25,8 +25,7 @@ The **Overview** tab provides a summary of the plugin's capabilities, while the 
   customization! See above for details.
 - The search and display attributes both support entry properties and
   field IDs.
-  See <a href="https://docs.gravityforms.com/entry-object/" target="_blank"
-  rel="noreferrer noopener">Gravity Forms Entry Object</a>.
+  See [Gravity Forms Entry Object](https://docs.gravityforms.com/entry-object/ ).
 - To perform a global search for any field with a specified value, leave
   the corresponding search ID blank.
 - To display values from a field without searching, omit the search

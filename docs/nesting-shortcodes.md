@@ -30,9 +30,7 @@ When nesting a `gravops_search` shortcode:
   refer to placeholder values
 - Likewise, when referencing entry values inside formulas or shortcode
   attributes, you may need to use a custom merge tag
-  format <span class="small">(see our snippet <a
-  href="https://brightleafdigital.io/code/entry/1642-gravityops-search-special-merge-tag-for-gravitymath/"
-  target="_blank" rel="noreferrer noopener">here</a>)</span>. Using
+  format <span class="small">(see our snippet [here](https://brightleafdigital.io/code/entry/1642-gravityops-search-special-merge-tag-for-gravitymath/))</span>. Using
   standard merge tags like `{8}` or `{``gos``:8}` **will break** the
   shortcode. For example:
 
