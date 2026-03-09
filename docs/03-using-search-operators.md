@@ -1,6 +1,6 @@
 # Using Search Operators
 
-The `operators` [attribute](https://brightleafdigital.io/code/entry/44-gfsearch-shortcode/) allows you to define **how each search value is compared** to its corresponding field in the `search` attribute. It should be a **comma-separated list**, with each operator matching its position to the same-positioned field ID in the `search` attribute.
+The `operators` attribute allows you to define **how each search value is compared** to its corresponding field in the `search` attribute. It should be a **comma-separated list**, with each operator matching its position to the same-positioned field ID in the `search` attribute.
 
 ## Supported Operators
 
